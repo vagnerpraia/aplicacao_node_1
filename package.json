@@ -1,0 +1,26 @@
+{
+  "name": "aplicacao1",
+  "version": "1.0.0",
+  "description": "Aplicação de teste utilizado para o curso React + Redux da Udemy",
+  "main": "src/loader.js",
+  "scripts": {
+    "dev": "nodemon",
+    "production": "pm2 start src/loader.js --name Aplicacao1"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "express",
+    "mongodb"
+  ],
+  "author": "Vagner Praia <vagnerpraia@gmail.com> (https://github.com/vagnerpraia)",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.5",
+    "node-restful": "^0.2.6",
+    "nodemon": "^1.14.12",
+    "pm2": "^2.9.3"
+  }
+}

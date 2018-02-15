@@ -2,10 +2,15 @@
   "name": "aplicacao1",
   "version": "1.0.0",
   "description": "Aplicação de teste utilizado para o curso React + Redux da Udemy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vagnerpraia/aplicacao_node_1.git"
+  },
   "main": "src/loader.js",
   "scripts": {
     "dev": "nodemon",
-    "production": "pm2 start src/loader.js --name Aplicacao1"
+    "production": "pm2 start src/loader.js --name Aplicacao1",
+    "mongo": "mongod --port 27017 --dbpath D:/data/db"
   },
   "keywords": [
     "node",

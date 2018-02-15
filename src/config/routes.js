@@ -5,5 +5,5 @@ module.exports = function(server){
     server.use('/v1', router)
 
     const usuarioService = require('../api/usuario/usuarioService')
-    usuarioService.register(router, '/usuario')
+    usuarioService.register(router, '/usuarios')
 }

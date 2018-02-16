@@ -1,6 +1,6 @@
 require('./database')
 
 const server = require('./server')
-const routes = require('./routes')
+const services = require('./services')
 
-routes(server)
+services(server)

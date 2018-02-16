@@ -1,3 +1,8 @@
+require('./exception')
+
+const global = require('./global')
+global(__dirname);
+
 require('./database')
 
 const server = require('./server')

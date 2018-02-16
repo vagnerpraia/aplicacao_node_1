@@ -1,6 +1,5 @@
-const mongoose = require('mongoose')
-
 const conectarComMongoDB = function(){
+    const mongoose = require('mongoose')
     mongoose.Promise = global.Promise
 
     const host = process.env.DB_HOST

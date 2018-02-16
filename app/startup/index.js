@@ -1,6 +1,6 @@
-require('dotenv').config()
-
 const carregarAplicacao = function(){
+    require('dotenv').config()
+
     const path = require('path')
     
     const global = require('./global')

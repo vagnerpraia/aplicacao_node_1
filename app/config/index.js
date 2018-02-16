@@ -1,7 +1,7 @@
-require('./exception')
+//require('./exception')
 
-const global = require('./global')
-global(__dirname);
+//const global = require('./global')
+//global(__dirname);
 
 require('./database')
 

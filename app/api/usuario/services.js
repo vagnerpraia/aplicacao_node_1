@@ -1,7 +1,4 @@
-//const tipoUsuario = require('')
-
-const path = require('path')
-console.log(path.resolve(''))
+const tipoUsuario = appRequire('enum/tipoUsuario')
 
 const usuarios = require('./model')
 

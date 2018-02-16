@@ -1,1 +1,2 @@
-require('./config')
+const startup = require('./startup')
+startup.carregarAplicacao()

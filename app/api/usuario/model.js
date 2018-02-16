@@ -1,14 +1,20 @@
-const restful = require('node-restful')
-const mongoose = restful.mongoose
+const obterModelo = function(){
+    const restful = require('node-restful')
+    const mongoose = restful.mongoose
 
-const schema = new mongoose.Schema(
-    {
-        email: {type: String, require: true},
-        senha: {type: String, require: true}
-    },
-    {
-        versionKey: false
-    }
-)
+    const schema = new mongoose.Schema(
+        {
+            email: {type: String, require: true},
+            senha: {type: String, require: true}
+        },
+        {
+            versionKey: false
+        }
+    )
 
-module.exports = restful.model('Usuario', schema)
+    return restful.model('Usuario', schema)
+}
+
+module.exports = {
+    obterModelo
+}

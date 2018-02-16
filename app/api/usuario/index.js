@@ -1,1 +1,5 @@
-module.exports = require('./services')
+const servicos = require('./services')
+
+module.exports = {
+    servicos: servicos.configurarServicos()
+}

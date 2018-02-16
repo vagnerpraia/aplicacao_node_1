@@ -1,8 +1,13 @@
-const tipoUsuario = appRequire('enum/tipoUsuario')
+const configurarServicos = function(){
+    const usuario = require('./model')
+    const modelo = usuario.obterModelo()
 
-const usuarios = require('./model')
+    modelo.methods(['get', 'post', 'put', 'delete'])
+    modelo.updateOptions({new: true, runValidators: true})
 
-usuarios.methods(['get', 'post', 'put', 'delete'])
-usuarios.updateOptions({new: true, runValidators: true})
+    return modelo
+}
 
-module.exports = usuarios
+module.exports = {
+    configurarServicos
+}

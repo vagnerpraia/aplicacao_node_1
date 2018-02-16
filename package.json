@@ -6,10 +6,10 @@
     "type": "git",
     "url": "https://github.com/vagnerpraia/aplicacao_node_1.git"
   },
-  "main": "src/index.js",
+  "main": "loader.js",
   "scripts": {
     "dev": "nodemon",
-    "production": "pm2 start src/index.js --name Aplicacao1",
+    "production": "pm2 start loader.js --name Aplicacao1",
     "mongo": "mongod --port 27017 --dbpath D:/data/db"
   },
   "keywords": [

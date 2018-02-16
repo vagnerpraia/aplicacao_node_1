@@ -1,11 +1,10 @@
 const port = 3000
 
-const bodyParser = require('body-parser')
 const express = require('express')
 const server = express()
+const middlewares = require('../middlewares')
 
-server.use(bodyParser.urlencoded({extended: true}))
-server.use(bodyParser.json())
+middlewares(server)
 
 server.listen(port, function(){
      console.log('Aplicação executando na porta ' + port + '.')

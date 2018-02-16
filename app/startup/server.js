@@ -1,5 +1,5 @@
 const middleware = appRequire('middleware')
-const port = 3000
+const port = process.env.PORT || 3000
 
 const criarServidorExpress = function(){
     const express = require('express')

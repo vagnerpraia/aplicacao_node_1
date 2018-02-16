@@ -1,6 +1,8 @@
-const path = require('path')
+require('dotenv').config()
 
 const carregarAplicacao = function(){
+    const path = require('path')
+    
     const global = require('./global')
     const appPath = path.dirname(__dirname)
     global.configurarRootPath(appPath)

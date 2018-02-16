@@ -27,5 +27,8 @@
     "node-restful": "^0.2.6",
     "nodemon": "^1.14.12",
     "pm2": "^2.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^5.0.0"
   }
 }

@@ -3,7 +3,10 @@ const mongoose = require('mongoose')
 const conectarComMongoDB = function(){
     mongoose.Promise = global.Promise
 
-    mongoose.connect('mongodb://localhost/aplicacao_node_1')
+    const host = process.env.DB_HOST
+    const port = process.env.DB_PORT
+    const database = process.env.DB_DATABASE
+    mongoose.connect('mongodb://' + host + ':' + port + '/' + database)
 }
 
 module.exports = {
